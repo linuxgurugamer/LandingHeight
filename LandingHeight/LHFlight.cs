@@ -143,7 +143,7 @@ namespace LandingHeight
 
             tumblerASLtext.alignment = TMPro.TextAlignmentOptions.Center;
             tumblerASLtext.fontSize = 14;
-            tumblerASLtext.fontStyle = TMPro.FontStyles.Normal;
+            tumblerASLtext.fontStyle = TMPro.FontStyles.Bold;
             tumblerASLtext.font = Resources.Load("Fonts/Arial SDF", typeof(TMPro.TMP_FontAsset)) as TMPro.TMP_FontAsset;
 
             SetGUITextMode();
@@ -186,6 +186,8 @@ namespace LandingHeight
                         break;
                     }
             }
+            tumblerASLtext.text = "<b>" + tumblerASLtext.text + "</b>";
+
             spdDisp = FlightGlobals.speedDisplayMode;
                     
         }

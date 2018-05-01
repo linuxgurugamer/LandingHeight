@@ -1,0 +1,37 @@
+2.2
+	Adoption by LGG
+	Added AssemblyVersion.tt
+	Added .version file
+	added Changelog
+	Added Jenkins config
+	Updated for 1.4
+
+1.2 ??
+	Fix math error on PQS calcs ignoring ocean
+
+2.0
+	Add Text Mode display
+
+1.9
+	Redo raycast logic based on discussion with Stephen Madding
+
+1.8
+	Fix invisible planet objects
+
+1.?
+	KSP 1.2 update
+
+1.5
+	KSP 1.1
+
+1.4
+	KSP 1.0
+
+1.3
+	-Fix error trapping so if there is no collider on the part (such as a Kerbal on EVA for some reason) it reports relevant data anyway.
+
+1.2
+	KSP 0.90 Recompile
+
+1.1
+	Fix NullRef error when part collider not present.

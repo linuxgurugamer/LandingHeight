@@ -1,3 +1,6 @@
+2.2.0.1
+	Version bump to fix error in .version file
+
 2.2
 	Adoption by LGG
 	Added AssemblyVersion.tt
@@ -6,7 +9,7 @@
 	Added Jenkins config
 	Updated for 1.4
 
-1.2 ??
+2.1
 	Fix math error on PQS calcs ignoring ocean
 
 2.0

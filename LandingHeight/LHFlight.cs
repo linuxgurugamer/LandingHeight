@@ -58,13 +58,13 @@ namespace LandingHeight
         Button lhBtn; //button for clickage
         FlightGlobals.SpeedDisplayModes spdDisp;
 
-        
 
+#if false
         public void Start()
         {
-            Debug.Log("Landing Height v2.1 start.");
+            Debug.Log("Landing Height start.");
         }
-
+#endif
        
 
         public void lhButtonClick()
@@ -153,8 +153,7 @@ namespace LandingHeight
 
         public void SetGUITextMode()
         {
-            Debug.Log("SetGUITextMode, lhGUImodeStatic: " + LHFlightData.lhGUImodeStatic + ",  tumblerASLtext.text: " + tumblerASLtext.text);
-            switch (LHFlightData.lhGUImodeStatic)
+                       switch (LHFlightData.lhGUImodeStatic)
             {
                 case 1:
                     {

@@ -1,3 +1,6 @@
+2.2.0.3
+	Removed debug log spam
+
 2.2.0.2
 	Fixed issue where altimeter would go blank between 600,000m and 1000km
 

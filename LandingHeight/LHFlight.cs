@@ -128,6 +128,7 @@ namespace LandingHeight
             }
             catch
             {
+                _tumbler = null;
                 //no tumbler object found, we hit this on scene change, silently fail
             }
         }
@@ -152,6 +153,7 @@ namespace LandingHeight
 
         public void SetGUITextMode()
         {
+            Debug.Log("SetGUITextMode, lhGUImodeStatic: " + LHFlightData.lhGUImodeStatic + ",  tumblerASLtext.text: " + tumblerASLtext.text);
             switch (LHFlightData.lhGUImodeStatic)
             {
                 case 1:
@@ -186,7 +188,8 @@ namespace LandingHeight
                         break;
                     }
             }
-            tumblerASLtext.text = "<b>" + tumblerASLtext.text + "</b>";
+            if (tumblerASLtext.text != "")
+                tumblerASLtext.text = "<b>" + tumblerASLtext.text + "</b>";
 
             spdDisp = FlightGlobals.speedDisplayMode;
                     

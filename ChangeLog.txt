@@ -1,3 +1,6 @@
+2.2.0.4
+	Version bump for 1.5 rebuild
+
 2.2.0.3
 	Removed debug log spam
 

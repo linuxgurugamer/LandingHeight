@@ -116,11 +116,13 @@ namespace LandingHeight
                     lhBtn.onClick.AddListener(() => { lhButtonClick(); });
                     AddText();
                 }
-                
+
                 if (FlightGlobals.speedDisplayMode == FlightGlobals.SpeedDisplayModes.Surface && LHFlightData.lhGUImodeStatic == 1 || FlightGlobals.speedDisplayMode == FlightGlobals.SpeedDisplayModes.Surface && LHFlightData.lhGUImodeStatic == 2 || LHFlightData.lhGUImodeStatic == 4) //only override if in surface mode
                 {
                     _tumbler.tumbler.SetValue(heightToLand());
+                    _tumbler.SetModeTumbler(AltimeterDisplayState.AGL);
                 }
+                else if (FlightGlobals.speedDisplayMode == FlightGlobals.SpeedDisplayModes.Orbit) _tumbler.SetModeTumbler(AltimeterDisplayState.ASL);
                 if(spdDisp != FlightGlobals.speedDisplayMode) //how we detect mouse click on speed display mode.
                 {
                     SetGUITextMode();
